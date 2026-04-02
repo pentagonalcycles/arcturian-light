@@ -157,7 +157,8 @@ Carried over from existing WordPress pages, lightly reformatted to match new des
 |---|---|---|
 | Mailchimp newsletter | Standard Mailchimp embed HTML snippet | Styled to match dark theme. Placed on Home and Contact pages |
 | PayPal payments | Direct `paypal.me/CarolNayach` link buttons | No PayPal SDK embed needed |
-| YouTube embeds | Standard `<iframe>` embeds | CSS grid layout on Videos page |
+| YouTube channel | Direct link to `https://www.youtube.com/@ArcturianLight` | Used on Videos page, Meditations page, footer, and Contact page. Replaces the old shortened `bit.ly/2J3hsRz` link. |
+| YouTube embeds | Standard `<iframe>` embeds | CSS grid layout on Videos page — pending video IDs from Carol |
 | Contact form | Formspree (`<form action="https://formspree.io/f/...">`) | Free tier (50 submissions/month). Emails Carol directly. No backend required |
 | Zoom links | Meeting ID displayed publicly; password withheld | Visitors directed to contact form to request the Zoom password. Direct `zoom.us` join links removed from public-facing pages to prevent uninvited/disruptive access. |
 

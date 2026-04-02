@@ -1833,3 +1833,4 @@ See the spec document (`docs/superpowers/specs/2026-04-02-arcturian-light-redesi
 | Date | Change | Commit |
 |---|---|---|
 | 2026-04-02 | Removed public Zoom password from `meditations.html`. Zoom Meeting ID remains visible but password is withheld — visitors are prompted to contact Carol via the contact form to receive it. Direct "Join on Zoom" buttons replaced with "Get Zoom Password" → `contact.html` on all session blocks. | `e299f17` |
+| 2026-04-02 | Replaced shortened `bit.ly/2J3hsRz` YouTube link with direct channel URL `https://www.youtube.com/@ArcturianLight` across all 8 HTML files (12 occurrences). | `5c8c4b8` |
