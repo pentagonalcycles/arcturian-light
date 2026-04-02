@@ -1,0 +1,134 @@
+/* ============================================================
+   ARCTURIAN LIGHT LONDON — style.css
+   ============================================================ */
+
+/* --- Design tokens ----------------------------------------- */
+:root {
+  /* Colours */
+  --color-bg:          #0a0a1a;  /* Deep Space */
+  --color-surface:     #1a1040;  /* Indigo Night */
+  --color-accent:      #2a1f6e;  /* Arcturian Violet */
+  --color-gold:        #c8a96e;  /* Starlight Gold */
+  --color-violet:      #9b8fc4;  /* Soft Violet */
+  --color-cream:       #e8d5a3;  /* Warm Cream */
+  --color-ghost:       #f0eefc;  /* Ghost White */
+  --color-body-text:   #c8c0e0;  /* General body text */
+
+  /* Typography */
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-serif:   Georgia, 'Times New Roman', serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  6rem;
+
+  /* Layout */
+  --max-width: 1100px;
+  --nav-height: 72px;
+}
+
+/* --- Reset -------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--color-bg);
+  color: var(--color-body-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--color-gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { list-style: none; }
+
+/* --- Base typography --------------------------------------- */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--color-gold);
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
+h4 {
+  font-family: var(--font-sans);
+  color: var(--color-violet);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+p { margin-bottom: var(--space-sm); color: var(--color-body-text); }
+p:last-child { margin-bottom: 0; }
+
+/* --- Layout helpers ---------------------------------------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+.section {
+  padding: var(--space-lg) 0;
+}
+.section--accent {
+  background-color: var(--color-surface);
+}
+.section--violet {
+  background-color: var(--color-accent);
+}
+.text-center { text-align: center; }
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--color-gold);
+  margin: var(--space-md) auto;
+  opacity: 0.7;
+}
+.star-sep {
+  display: block;
+  text-align: center;
+  color: var(--color-gold);
+  font-size: 1.25rem;
+  letter-spacing: 0.5em;
+  margin: var(--space-md) 0;
+}
+
+/* --- Buttons ----------------------------------------------- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+.btn:hover { opacity: 0.85; text-decoration: none; }
+.btn--primary {
+  background-color: var(--color-gold);
+  color: var(--color-bg);
+  border: 2px solid var(--color-gold);
+}
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-gold);
+  border: 2px solid var(--color-gold);
+}
+.btn-group {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-md);
+}
