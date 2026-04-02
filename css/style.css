@@ -153,6 +153,7 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 }
 .nav-brand {
   font-family: var(--font-display);
@@ -190,9 +191,7 @@ p:last-child { margin-bottom: 0; }
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
-  flex-direction: column;
-  gap: 5px;
+  padding: 0.5rem;
 }
 .nav-toggle span {
   display: block;
@@ -200,6 +199,10 @@ p:last-child { margin-bottom: 0; }
   height: 2px;
   background: var(--color-gold);
   transition: transform 0.2s, opacity 0.2s;
+}
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
 }
 
 /* --- Footer ------------------------------------------------ */
@@ -249,11 +252,13 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 767px) {
   .nav-toggle {
     display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
   }
   .nav-links {
     display: none;
     position: absolute;
-    top: var(--nav-height);
+    top: 100%;
     left: 0;
     right: 0;
     background-color: var(--color-surface);
