@@ -313,7 +313,8 @@ p:last-child { margin-bottom: 0; }
   text-align: center;
   transition: border-color 0.2s;
 }
-.card:hover { border-color: var(--color-gold); }
+.card:hover,
+.card:focus-within { border-color: var(--color-gold); }
 .card-icon {
   font-size: 2rem;
   color: var(--color-gold);
@@ -402,7 +403,8 @@ p:last-child { margin-bottom: 0; }
 }
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
   border-color: var(--color-gold);
 }
 .form-group textarea { min-height: 140px; resize: vertical; }
@@ -425,7 +427,8 @@ p:last-child { margin-bottom: 0; }
   padding: 0.5rem 1rem;
   transition: border-color 0.2s, color 0.2s;
 }
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:focus-visible {
   border-color: var(--color-gold);
   color: var(--color-gold);
   text-decoration: none;
