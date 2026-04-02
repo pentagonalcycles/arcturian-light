@@ -251,7 +251,7 @@ The site is built and deployed at https://arcturian-light.vercel.app. The follow
 | Formspree form ID | Create free account at formspree.io, point form to `nayachcarol@gmail.com`, replace `FORMSPREE_ID` | `contact.html` — `<form action="https://formspree.io/f/FORMSPREE_ID">` |
 | Mailchimp embed snippet | Get embed HTML from Carol's Mailchimp account, replace placeholder `<div>` | `index.html` and `contact.html` — marked with `<!-- TODO: Replace with Mailchimp embed snippet -->` |
 | YouTube video IDs | Get video IDs from Carol's channel, uncomment the `video-grid` template in `videos.html` and replace `VIDEO_ID_1`–`VIDEO_ID_6` | `videos.html` — commented-out `<div class="video-grid">` block |
-| Carol's photo | Add image file as `images/carol.jpg` | `about.html` — `<img src="images/carol.jpg" alt="Carol Nayach">` (hidden if missing via `onerror`) |
+| ~~Carol's photo~~ | ~~Add image file as `images/carol.jpg`~~ | **Done** — `images/CarolNayach.png` added and live on About page (`3ac576d`) |
 | Privacy Policy text | Copy from `arcturianlight.co.uk/privacy-policy/`, paste into content section | `privacy-policy.html` — marked with `<!-- TODO -->` |
 | Terms of Service text | Copy from `arcturianlight.co.uk/terms-of-service/`, paste into content section | `terms.html` — marked with `<!-- TODO -->` |
 | Testimonials | Carol to supply — replace placeholder quote | `healing.html` — `<blockquote class="testimonial">` |

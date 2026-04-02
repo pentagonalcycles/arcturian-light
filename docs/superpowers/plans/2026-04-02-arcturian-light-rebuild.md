@@ -1819,7 +1819,7 @@ See the spec document (`docs/superpowers/specs/2026-04-02-arcturian-light-redesi
 | Formspree form ID | `contact.html` | Pending — create at formspree.io |
 | Mailchimp embed snippet | `index.html`, `contact.html` | Pending — get from Carol's account |
 | YouTube video IDs | `videos.html` | Pending — Carol to supply |
-| Carol's photo | `images/carol.jpg` | Pending — Carol to supply |
+| ~~Carol's photo~~ | `images/CarolNayach.png` | **Done** — added to About page (`3ac576d`) |
 | Privacy Policy text | `privacy-policy.html` | Pending — copy from existing WP page |
 | Terms of Service text | `terms.html` | Pending — copy from existing WP page |
 | Testimonials | `healing.html` | Pending — Carol to supply |
@@ -1834,3 +1834,4 @@ See the spec document (`docs/superpowers/specs/2026-04-02-arcturian-light-redesi
 |---|---|---|
 | 2026-04-02 | Removed public Zoom password from `meditations.html`. Zoom Meeting ID remains visible but password is withheld — visitors are prompted to contact Carol via the contact form to receive it. Direct "Join on Zoom" buttons replaced with "Get Zoom Password" → `contact.html` on all session blocks. | `e299f17` |
 | 2026-04-02 | Replaced shortened `bit.ly/2J3hsRz` YouTube link with direct channel URL `https://www.youtube.com/@ArcturianLight` across all 8 HTML files (12 occurrences). | `5c8c4b8` |
+| 2026-04-02 | Added Carol's photo (`images/CarolNayach.png`) to the About page two-column section. | `3ac576d` |
