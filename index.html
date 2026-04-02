@@ -12,15 +12,17 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- HEADER / NAV -->
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Main navigation">
         <a href="index.html" class="nav-brand">✦ Arcturian Light</a>
-        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </button>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li><a href="about.html">About</a></li>
           <li><a href="meditations.html">Meditations &amp; Schedule</a></li>
           <li><a href="healing.html">Healing</a></li>
@@ -31,18 +33,11 @@
     </div>
   </header>
 
+  <main id="main-content">
+
   <!-- HERO -->
   <section class="hero">
-    <div style="
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-      background: radial-gradient(ellipse at 50% 30%, #2a1f6e 0%, #1a1040 40%, #0a0a1a 100%);
-    ">
+    <div class="hero-inner">
       <p style="font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--color-violet);margin-bottom:1.5rem;">
         ✦ &nbsp; An Arcturian Group in London &nbsp; ✦
       </p>
@@ -82,7 +77,7 @@
   <section class="section section--accent">
     <div class="container">
       <div class="text-center" style="margin-bottom:var(--space-md);">
-        <h4>Our Work</h4>
+        <p class="label">Our Work</p>
         <h2>Three Pillars</h2>
         <div class="divider"></div>
       </div>
@@ -112,7 +107,7 @@
   <!-- NEWSLETTER SIGNUP -->
   <section class="section text-center">
     <div class="container" style="max-width:560px;">
-      <h4>Stay Connected</h4>
+      <p class="label">Stay Connected</p>
       <h2>Newsletter</h2>
       <div class="divider"></div>
       <p>Sign up to receive the Arcturian Light newsletter with event updates and transmissions.</p>
@@ -123,13 +118,15 @@
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-social">
-        <a href="http://fb.com/arcturianlightlondon" target="_blank" rel="noopener">Facebook</a>
-        <a href="http://instagram.com/arcturian_light_london" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://bit.ly/2J3hsRz" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.facebook.com/arcturianlightlondon" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/arcturian_light_london" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://bit.ly/2J3hsRz" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="mailto:nayachcarol@gmail.com">Email</a>
       </div>
       <div class="footer-legal">
@@ -138,9 +135,9 @@
       </div>
       <p class="footer-attribution">
         Our work is connected to the work of David K Miller with the Arcturians.
-        For more information refer to <a href="http://groupofforty.com/" target="_blank" rel="noopener">David Miller Group of Forty</a>.
+        For more information refer to <a href="http://groupofforty.com/" target="_blank" rel="noopener noreferrer">David Miller Group of Forty</a>.
       </p>
-      <p class="footer-copyright">&copy; <script>document.write(new Date().getFullYear())</script> Carol Nayach</p>
+      <p class="footer-copyright">&copy; <span id="copyright-year"></span> Carol Nayach</p>
     </div>
   </footer>
 
