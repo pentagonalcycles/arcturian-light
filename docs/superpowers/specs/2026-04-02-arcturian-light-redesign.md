@@ -114,12 +114,12 @@ Multi-page site. 8 HTML files total.
 
 1. Page hero with title
 2. What the sessions are — brief description
-3. Schedule table/list:
-   - Weekly Monday 11am (online only) — £10 via PayPal, Zoom link
-   - Weekly Wednesday 7–8:15pm (in-person & online) — £10, Zoom link, note re venue (email to attend in person)
-   - Weekend retreats — dates updated by developer when Carol provides them
-4. Zoom Meeting ID and pass displayed prominently
-5. PayPal link styled as a button
+3. Zoom Details section — Meeting ID displayed publicly; password is **not** shown. Visitors are prompted to contact Carol via the contact form to receive the password (security measure to prevent disruptive attendees)
+4. Schedule table/list:
+   - Weekly Monday 11am (online only) — £10 via PayPal, "Get Zoom Password" button → `contact.html`
+   - Weekly Wednesday 7–8:15pm (in-person & online) — £10, "Get Zoom Password" button → `contact.html`, note re venue (email to attend in person)
+   - Weekend retreats — dates updated by developer when Carol provides them; same password-request pattern applies
+5. PayPal link styled as a button on each session block
 
 ### Healing (`healing.html`)
 
@@ -159,7 +159,7 @@ Carried over from existing WordPress pages, lightly reformatted to match new des
 | PayPal payments | Direct `paypal.me/CarolNayach` link buttons | No PayPal SDK embed needed |
 | YouTube embeds | Standard `<iframe>` embeds | CSS grid layout on Videos page |
 | Contact form | Formspree (`<form action="https://formspree.io/f/...">`) | Free tier (50 submissions/month). Emails Carol directly. No backend required |
-| Zoom links | Direct `zoom.us` join links | Displayed as buttons on Meditations page |
+| Zoom links | Meeting ID displayed publicly; password withheld | Visitors directed to contact form to request the Zoom password. Direct `zoom.us` join links removed from public-facing pages to prevent uninvited/disruptive access. |
 
 ---
 
