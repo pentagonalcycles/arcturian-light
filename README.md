@@ -117,7 +117,7 @@ When all open items below are resolved:
 - [ ] YouTube video IDs — uncomment video grid in `videos.html` and add IDs
 - [ ] Privacy Policy text — paste into `privacy-policy.html`
 - [ ] Terms of Service text — paste into `terms.html`
-- [ ] Testimonials — replace placeholder in `healing.html`
+- [x] Testimonials — Marco, London (polymyalgia healing) added to `healing.html`
 - [ ] Weekend retreat dates — add schedule blocks in `meditations.html`
 - [ ] DNS cutover — point `arcturianlight.co.uk` to Vercel
 
