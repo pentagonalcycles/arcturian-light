@@ -17,7 +17,7 @@ Plain HTML + CSS. No framework, no build tools, no dependencies.
 - `css/style.css` — single shared stylesheet (CSS custom properties, all components, responsive)
 - `js/main.js` — mobile nav toggle, nav-close-on-link-click, copyright year
 - `images/` — static images
-- 8 HTML pages (see structure below)
+- 9 HTML pages (see structure below)
 
 ---
 
@@ -29,6 +29,18 @@ nayach/
     style.css
   images/
     CarolNayach.png
+    Arcturians.jpeg
+    CarolCrystalsCircle.jpeg
+    CarolPirenees01.jpeg
+    CarolPirenees02.jpeg
+    GlastenburyMaryMagdaleChapel.jpg
+    KwanYin.jpeg
+    ShaftesburyChurch.jpeg
+    StoneHenge.jpeg
+    milky-way-923738_1280.jpg
+    nathan-anderson-199509.jpg
+    img-1.jpg … img-6.jpg
+    s1.jpg … s4.jpg
   js/
     main.js
   index.html           ← Home
@@ -36,6 +48,7 @@ nayach/
   meditations.html     ← Schedule, Zoom details, PayPal
   healing.html         ← Personal healing sessions
   videos.html          ← YouTube embeds (pending video IDs)
+  photos.html          ← Photo gallery with lightbox
   contact.html         ← Formspree form, social links, newsletter
   privacy-policy.html  ← Legal (content pending)
   terms.html           ← Legal (content pending)
@@ -63,6 +76,9 @@ Create a free account at [formspree.io](https://formspree.io), create a new form
 
 ### Add/update Carol's photo
 Replace or add image files in `images/`. The About page references `images/CarolNayach.png`.
+
+### Add photos to the gallery
+Drop image files into the `images/` folder, then add a `<figure class="photo-item">` block inside the `.photo-grid` in `photos.html`. Copy the pattern of any existing entry — set the `href` and `src` both to `images/your-file.jpg` and provide a descriptive `alt` attribute. A `<figcaption>` is optional.
 
 ### Update Privacy Policy or Terms of Service
 Copy the text from the existing WordPress pages (`arcturianlight.co.uk/privacy-policy/` and `/terms-of-service/`), paste into the content section of `privacy-policy.html` and `terms.html` respectively, and format using standard `<h2>`, `<p>`, `<ul>` tags.
