@@ -444,6 +444,13 @@ p:last-child { margin-bottom: 0; }
   color: var(--color-cream);
   font-size: 1.05rem;
 }
+.testimonial footer {
+  margin-top: var(--space-xs);
+  font-size: 0.8rem;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  color: var(--color-violet);
+}
 
 /* --- Mailchimp embed override ------------------------------ */
 /* Forces Mailchimp's injected form to match dark theme */
