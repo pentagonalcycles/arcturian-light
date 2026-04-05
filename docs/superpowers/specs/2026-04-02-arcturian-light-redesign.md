@@ -142,7 +142,7 @@ Multi-page site. 8 HTML files total.
 1. Page hero with title
 2. Formspree contact form (name, email, message fields) — submissions emailed to `nayachcarol@gmail.com`
 3. Social links: Facebook (`fb.com/arcturianlightlondon`), Instagram (`arcturian_light_london`), YouTube channel, email
-4. Zoom Meeting ID: 9829596972 / Pass: Arcturus
+4. Zoom Meeting ID: 9829596972 / Password: not displayed publicly — available on request via email
 5. Mailchimp newsletter signup embed (repeated from home)
 
 ### Privacy Policy & Terms

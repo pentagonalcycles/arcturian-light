@@ -1007,7 +1007,7 @@ git commit -m "feat: add About page with Carol's story, Arcturians, Stargate and
       <h2>Zoom Details</h2>
       <div class="divider"></div>
       <p style="font-size:1.1rem;color:var(--color-cream);">Meeting ID: <strong>982 959 6972</strong></p>
-      <p style="color:var(--color-cream);">Password: <strong>Arcturus</strong></p>
+      <p style="color:var(--color-cream);">Password: available on request — <a href="mailto:nayachcarol@gmail.com">email Carol</a></p>
       <div class="btn-group">
         <a href="https://us02web.zoom.us/j/9829596972" class="btn btn--primary" target="_blank" rel="noopener">Join on Zoom</a>
       </div>
@@ -1510,7 +1510,7 @@ Note: The Formspree form action URL contains a placeholder ID `FORMSPREE_ID`. To
         <a href="https://bit.ly/2J3hsRz" target="_blank" rel="noopener">YouTube Channel</a>
       </div>
       <p style="margin-top:var(--space-md);color:var(--color-cream);">
-        Zoom Meeting ID: <strong>982 959 6972</strong> &nbsp;·&nbsp; Password: <strong>Arcturus</strong>
+        Zoom Meeting ID: <strong>982 959 6972</strong> &nbsp;·&nbsp; Password: available on request — <a href="mailto:nayachcarol@gmail.com">email Carol</a>
       </p>
     </div>
   </section>
