@@ -1807,6 +1807,7 @@ The plan was executed using the subagent-driven development skill. The following
 | Videos page | Broken iframe placeholders replaced with graceful "coming soon" state; iframe template preserved as commented-out HTML |
 | Legal pages | Added `footer-attribution` paragraph to `privacy-policy.html` and `terms.html` (was missing) |
 | `.gitignore` | Added `node_modules/` to the standard entries |
+| Git remote URL | Updated from an HTTPS URL containing an expired `ghp_…` token to the clean HTTPS URL `https://github.com/pentagonalcycles/arcturian-light.git`. The local `gh` CLI credential helper now handles authentication automatically, so future pushes do not require manual token input. |
 
 ---
 
@@ -1818,8 +1819,12 @@ See the spec document (`docs/superpowers/specs/2026-04-02-arcturian-light-redesi
 |---|---|---|
 | Formspree form ID | `contact.html` | Pending — create at formspree.io |
 | Mailchimp embed snippet | `index.html`, `contact.html` | Pending — get from Carol's account |
-| YouTube video IDs | `videos.html` | Pending — Carol to supply |
+| YouTube video IDs (Videos page) | `videos.html` | Pending — Carol to supply |
+| YouTube video IDs (Featured Meditations) | `meditations.html` | Pending — Carol to supply |
 | ~~Carol's photo~~ | `images/CarolNayach.png` | **Done** — added to About page (`3ac576d`) |
+| ~~Home page hero photo~~ | `index.html` | **Done** — added to hero (`c2ce6cf`) |
+| ~~About page copy~~ | `about.html` | **Done** — updated per Carol's document (`c2ce6cf`) |
+| ~~Meditations page copy~~ | `meditations.html` | **Done** — updated per Carol's document (`c2ce6cf`) |
 | Privacy Policy text | `privacy-policy.html` | Pending — copy from existing WP page |
 | Terms of Service text | `terms.html` | Pending — copy from existing WP page |
 | Testimonials | `healing.html` | Pending — Carol to supply |
@@ -1832,6 +1837,7 @@ See the spec document (`docs/superpowers/specs/2026-04-02-arcturian-light-redesi
 
 | Date | Change | Commit |
 |---|---|---|
+| 2026-11-04 | Major content update per Carol's change document: expanded About bio (keeping "Arians/Arian" as requested), rewrote Stargate section with no heading and added "Contact Carol" button, rewrote Sacred Triangle section with Unity quote and "Ask About The Sacred Triangle" button, added "Live Meditations, Teachings & Questions" section. Updated Meditations page with new live intro, Featured Meditations grid (2 real video placeholders + 2 placeholders), YouTube channel CTA, and "Share Your Experience" Facebook CTA. Added Carol's photo to Home hero. Zoom password remains withheld. | `c2ce6cf` |
 | 2026-04-02 | Removed public Zoom password from `meditations.html`. Zoom Meeting ID remains visible but password is withheld — visitors are prompted to contact Carol via the contact form to receive it. Direct "Join on Zoom" buttons replaced with "Get Zoom Password" → `contact.html` on all session blocks. | `e299f17` |
 | 2026-04-02 | Replaced shortened `bit.ly/2J3hsRz` YouTube link with direct channel URL `https://www.youtube.com/@ArcturianLight` across all 8 HTML files (12 occurrences). | `5c8c4b8` |
 | 2026-04-02 | Added Carol's photo (`images/CarolNayach.png`) to the About page two-column section. | `3ac576d` |

@@ -96,7 +96,7 @@ Multi-page site. 8 HTML files total.
 
 ### Home (`index.html`)
 
-1. **Hero** — full-viewport-height, dark gradient background (or a subtle space/star image), centred logo, site name in Cinzel/Georgia, tagline in italic serif, two CTA buttons (View Schedule / About Carol)
+1. **Hero** — full-viewport-height, dark gradient background, centred logo, site name in Cinzel/Georgia, circular photo of Carol below the title, tagline in italic serif, two CTA buttons (View Schedule / About Carol)
 2. **Intro** — 2–3 sentence welcome paragraph, centred, max-width ~600px
 3. **Three pillars** — horizontal card row: Meditations · Healing · Ascension. Each card: icon/symbol, title, one-line description, link
 4. **Newsletter signup** — Mailchimp embed, styled to match dark theme
@@ -104,22 +104,25 @@ Multi-page site. 8 HTML files total.
 ### About (`about.html`)
 
 1. Page hero (smaller than home) with page title
-2. Carol's story — text + photo of Carol
+2. Carol's story — expanded text + photo of Carol
 3. The Arcturians section — who they are
-4. The Arcturian Stargate
-5. The Crystal Temple & Sacred Triangle
-6. David K Miller attribution (footer note or inline callout)
+4. Arcturian Light — revised Stargate content with no `<h2>` heading and a "Contact Carol" button
+5. The Sacred Triangle — updated planetary healing content, Unity quote and "Ask About The Sacred Triangle" button
+6. Live Meditations, Teachings & Questions — new section about Zoom sessions
+7. David K Miller attribution (footer note or inline callout)
 
 ### Meditations & Schedule (`meditations.html`)
 
 1. Page hero with title
-2. What the sessions are — brief description
-3. Zoom Details section — Meeting ID displayed publicly; password is **not** shown. Visitors are prompted to contact Carol via the contact form to receive the password (security measure to prevent disruptive attendees)
-4. Schedule table/list:
+2. **Live Meditations, Teachings & Questions** — intro section with Unity quote and Zoom/community text
+3. **Featured Meditations** — 2-column card grid with up to four YouTube embed placeholders, descriptive text per video, and a "Visit Our YouTube Channel" button
+4. **Share Your Experience** — invitation to share stories on the Facebook page with a "Visit Our Facebook Page" button
+5. Zoom Details section — Meeting ID displayed publicly; password is **not** shown. Visitors are prompted to contact Carol via the contact form to receive the password (security measure to prevent disruptive attendees)
+6. Schedule table/list:
    - Weekly Monday 11am (online only) — £10 via PayPal, "Get Zoom Password" button → `contact.html`
    - Weekly Wednesday 7–8:15pm (in-person & online) — £10, "Get Zoom Password" button → `contact.html`, note re venue (email to attend in person)
    - Weekend retreats — dates updated by developer when Carol provides them; same password-request pattern applies
-5. PayPal link styled as a button on each session block
+7. PayPal link styled as a button on each session block
 
 ### Healing (`healing.html`)
 
@@ -158,7 +161,7 @@ Carried over from existing WordPress pages, lightly reformatted to match new des
 | Mailchimp newsletter | Standard Mailchimp embed HTML snippet | Styled to match dark theme. Placed on Home and Contact pages |
 | PayPal payments | Direct `paypal.me/CarolNayach` link buttons | No PayPal SDK embed needed |
 | YouTube channel | Direct link to `https://www.youtube.com/@ArcturianLight` | Used on Videos page, Meditations page, footer, and Contact page. Replaces the old shortened `bit.ly/2J3hsRz` link. |
-| YouTube embeds | Standard `<iframe>` embeds | CSS grid layout on Videos page — pending video IDs from Carol |
+| YouTube embeds | Standard `<iframe>` embeds | CSS grid layout on Videos page and Featured Meditations section on Meditations page — pending video IDs from Carol |
 | Contact form | Formspree (`<form action="https://formspree.io/f/...">`) | Free tier (50 submissions/month). Emails Carol directly. No backend required |
 | Zoom links | Meeting ID displayed publicly; password withheld | Visitors directed to contact form to request the Zoom password. Direct `zoom.us` join links removed from public-facing pages to prevent uninvited/disruptive access. |
 
@@ -250,13 +253,16 @@ The site is built and deployed at https://arcturian-light.vercel.app. The follow
 |---|---|---|
 | Formspree form ID | Create free account at formspree.io, point form to `nayachcarol@gmail.com`, replace `FORMSPREE_ID` | `contact.html` — `<form action="https://formspree.io/f/FORMSPREE_ID">` |
 | Mailchimp embed snippet | Get embed HTML from Carol's Mailchimp account, replace placeholder `<div>` | `index.html` and `contact.html` — marked with `<!-- TODO: Replace with Mailchimp embed snippet -->` |
-| YouTube video IDs | Get video IDs from Carol's channel, uncomment the `video-grid` template in `videos.html` and replace `VIDEO_ID_1`–`VIDEO_ID_6` | `videos.html` — commented-out `<div class="video-grid">` block |
+| YouTube video IDs (Videos page) | Get video IDs from Carol's channel, uncomment the `video-grid` template in `videos.html` and replace `VIDEO_ID_1`–`VIDEO_ID_6` | `videos.html` — commented-out `<div class="video-grid">` block |
+| YouTube video IDs (Featured Meditations) | Get video IDs from Carol's channel and replace `VIDEO_ID_1`–`VIDEO_ID_2`; replace placeholder blocks for videos 3 and 4 | `meditations.html` — `<div class="cards-grid cards-grid--2">` in Featured Meditations section |
 | ~~Carol's photo~~ | ~~Add image file as `images/carol.jpg`~~ | **Done** — `images/CarolNayach.png` added and live on About page (`3ac576d`) |
+| ~~Home page hero photo~~ | ~~Add photo under "Arcturian Light" title on home page~~ | **Done** — `images/CarolNayach.png` added to hero (`c2ce6cf`) |
+| ~~About page copy~~ | ~~Update bio, Stargate, Sacred Triangle and add live meditations section per Carol's document~~ | **Done** — `about.html` updated (`c2ce6cf`) |
+| ~~Meditations page copy~~ | ~~Add live intro, featured meditations, YouTube/Facebook CTAs per Carol's document~~ | **Done** — `meditations.html` updated (`c2ce6cf`) |
 | Privacy Policy text | Copy from `arcturianlight.co.uk/privacy-policy/`, paste into content section | `privacy-policy.html` — marked with `<!-- TODO -->` |
 | Terms of Service text | Copy from `arcturianlight.co.uk/terms-of-service/`, paste into content section | `terms.html` — marked with `<!-- TODO -->` |
 | Testimonials | Carol to supply — replace placeholder quote | `healing.html` — `<blockquote class="testimonial">` |
 | Weekend retreat dates | Carol to supply — uncomment example `schedule-block` and fill in dates | `meditations.html` — marked with `<!-- TODO: Add upcoming weekend retreat blocks -->` |
-| Updated bio / page copy | Carol to supply revised text | Various pages |
 | DNS cutover | In Vercel Project Settings → Domains, add `arcturianlight.co.uk`; update DNS at registrar with Vercel's records | Vercel dashboard |
 
 ---

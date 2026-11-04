@@ -43,9 +43,9 @@ nayach/
     s1.jpg … s4.jpg
   js/
     main.js
-  index.html           ← Home
-  about.html           ← About Carol & the Arcturians
-  meditations.html     ← Schedule, Zoom details, PayPal
+  index.html           ← Home (with hero photo)
+  about.html           ← About Carol & the Arcturians (expanded bio, Stargate, Sacred Triangle)
+  meditations.html     ← Schedule, featured meditations, Zoom details, PayPal
   healing.html         ← Personal healing sessions
   videos.html          ← YouTube embeds (pending video IDs)
   photos.html          ← Photo gallery with lightbox
@@ -68,6 +68,9 @@ Edit `meditations.html`. The weekly Monday and Wednesday blocks are always prese
 ### Add YouTube videos to the Videos page
 Edit `videos.html`. Find the commented-out `<div class="video-grid">` block. Uncomment it and replace `VIDEO_ID_1` through `VIDEO_ID_6` with real YouTube video IDs. To find a video ID: open the video on YouTube and copy the part after `?v=` in the URL (e.g. `https://www.youtube.com/watch?v=dQw4w9WgXcQ` → ID is `dQw4w9WgXcQ`). Remove the "coming soon" placeholder paragraph above the grid.
 
+### Add YouTube videos to the Featured Meditations section on the Meditations page
+Edit `meditations.html`. Locate the `<div class="cards-grid cards-grid--2">` inside the "Featured Meditations" section. Replace `VIDEO_ID_1` and `VIDEO_ID_2` with the real IDs, or replace the placeholder blocks for "Featured Meditation Three" and "Featured Meditation Four" with real `<iframe>` embeds once Carol supplies the titles and IDs.
+
 ### Add the Mailchimp newsletter signup
 Get the embed HTML snippet from Carol's Mailchimp account. In `index.html` and `contact.html`, find the `<!-- TODO: Replace with Mailchimp embed snippet -->` comment and replace the placeholder `<div>` with the snippet. The `#mc_embed_signup` CSS overrides in `style.css` will automatically theme it to match the dark design.
 
@@ -75,7 +78,7 @@ Get the embed HTML snippet from Carol's Mailchimp account. In `index.html` and `
 Create a free account at [formspree.io](https://formspree.io), create a new form pointing to `nayachcarol@gmail.com`, and copy the form ID (e.g. `xpzgkwrb`). In `contact.html`, replace `FORMSPREE_ID` in the form action URL.
 
 ### Add/update Carol's photo
-Replace or add image files in `images/`. The About page references `images/CarolNayach.png`.
+Replace or add image files in `images/`. The About page and the Home page hero both reference `images/CarolNayach.png`.
 
 ### Add photos to the gallery
 Drop image files into the `images/` folder, then add a `<figure class="photo-item">` block inside the `.photo-grid` in `photos.html`. Copy the pattern of any existing entry — set the `href` and `src` both to `images/your-file.jpg` and provide a descriptive `alt` attribute. A `<figcaption>` is optional.
@@ -96,6 +99,14 @@ Edit `healing.html`. Find the `<blockquote class="testimonial">` placeholder and
 
 Vercel picks up the push automatically and deploys within ~30 seconds.
 
+**Authentication note:** This repo is configured to use the `gh` CLI for HTTPS authentication. If `git push` fails with an authentication error, check the remote URL with `git remote -v`. If it contains an expired `ghp_…` token, reset it to the clean HTTPS URL:
+
+```bash
+git remote set-url origin https://github.com/pentagonalcycles/arcturian-light.git
+```
+
+Then push again.
+
 ---
 
 ## Pointing arcturianlight.co.uk to Vercel (DNS cutover)
@@ -115,11 +126,15 @@ When all open items below are resolved:
 - [ ] Formspree form ID — replace `FORMSPREE_ID` in `contact.html`
 - [ ] Mailchimp embed snippet — replace placeholder in `index.html` and `contact.html`
 - [ ] YouTube video IDs — uncomment video grid in `videos.html` and add IDs
+- [ ] Featured meditation video IDs — replace `VIDEO_ID_1`–`VIDEO_ID_2` and placeholder blocks in `meditations.html`
 - [ ] Privacy Policy text — paste into `privacy-policy.html`
 - [ ] Terms of Service text — paste into `terms.html`
 - [x] Testimonials — Marco, London (polymyalgia healing) added to `healing.html`
 - [ ] Weekend retreat dates — add schedule blocks in `meditations.html`
 - [ ] DNS cutover — point `arcturianlight.co.uk` to Vercel
+- [x] Home page hero photo — `images/CarolNayach.png` added to `index.html`
+- [x] About page content — expanded bio, Stargate, Sacred Triangle and live meditations sections updated
+- [x] Meditations page content — featured meditations, YouTube/Facebook CTAs and live intro added
 
 ---
 
