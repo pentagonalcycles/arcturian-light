@@ -142,13 +142,13 @@ When all open items below are resolved:
 
 | Token | Value | Usage |
 |---|---|---|
-| `--color-bg` | `#0a0a1a` | Page background |
-| `--color-surface` | `#1a1040` | Cards, header, footer |
-| `--color-accent` | `#2a1f6e` | Borders, accent sections |
-| `--color-gold` | `#c8a96e` | Headings, CTAs, decorative |
-| `--color-violet` | `#9b8fc4` | Labels, nav links, secondary text |
-| `--color-cream` | `#e8d5a3` | Subheadings, emphasis text |
-| `--color-body-text` | `#c8c0e0` | Body text |
+| `--color-bg` | `#ffffff` | Page background |
+| `--color-surface` | `#f7f5fa` | Cards, header, footer |
+| `--color-accent` | `#e0d9ed` | Borders, accent sections |
+| `--color-gold` | `#7a5f2f` | Headings, CTAs, decorative |
+| `--color-violet` | `#4a3f7a` | Labels, nav links, secondary text |
+| `--color-cream` | `#1a1040` | Subheadings, emphasis text |
+| `--color-body-text` | `#2a1f6e` | Body text |
 
 Display font: **Cinzel** (Google Fonts) — headings  
 Body font: **system-ui** — all other text

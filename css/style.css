@@ -4,15 +4,15 @@
 
 /* --- Design tokens ----------------------------------------- */
 :root {
-  /* Colours */
-  --color-bg:          #0a0a1a;  /* Deep Space */
-  --color-surface:     #1a1040;  /* Indigo Night */
-  --color-accent:      #2a1f6e;  /* Arcturian Violet */
-  --color-gold:        #c8a96e;  /* Starlight Gold */
-  --color-violet:      #9b8fc4;  /* Soft Violet */
-  --color-cream:       #e8d5a3;  /* Warm Cream */
-  --color-ghost:       #f0eefc;  /* Ghost White */
-  --color-body-text:   #c8c0e0;  /* General body text */
+  /* Colours — light theme */
+  --color-bg:          #ffffff;  /* White page background */
+  --color-surface:     #f7f5fa;  /* Very light lavender surface */
+  --color-accent:      #e0d9ed;  /* Light violet borders/dividers */
+  --color-gold:        #7a5f2f;  /* Darker gold for contrast on white */
+  --color-violet:      #4a3f7a;  /* Dark violet labels/nav */
+  --color-cream:       #1a1040;  /* Dark indigo for emphasis/subheadings */
+  --color-ghost:       #1a1040;  /* Dark indigo */
+  --color-body-text:   #2a1f6e;  /* Dark blue body text */
 
   /* Typography */
   --font-display: 'Cinzel', Georgia, serif;
@@ -276,7 +276,7 @@ p:last-child { margin-bottom: 0; }
 .page-hero {
   padding: var(--space-xl) 0 var(--space-lg);
   text-align: center;
-  background: linear-gradient(160deg, var(--color-bg) 0%, var(--color-surface) 100%);
+  background: linear-gradient(160deg, #ffffff 0%, #f7f5fa 100%);
   border-bottom: 1px solid var(--color-accent);
 }
 .page-hero .label {
@@ -679,7 +679,7 @@ p:last-child { margin-bottom: 0; }
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: radial-gradient(ellipse at 50% 30%, var(--color-accent) 0%, var(--color-surface) 40%, var(--color-bg) 100%);
+  background: radial-gradient(ellipse at 50% 30%, #e8e4f3 0%, #f7f5fa 50%, #ffffff 100%);
 }
 .hero-image {
   max-width: 260px;
@@ -687,5 +687,5 @@ p:last-child { margin-bottom: 0; }
   border-radius: 50%;
   border: 2px solid var(--color-gold);
   margin-bottom: 1rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px rgba(26, 16, 64, 0.15);
 }
