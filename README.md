@@ -72,7 +72,7 @@ Edit `videos.html`. Find the commented-out `<div class="video-grid">` block. Unc
 Edit `meditations.html`. Locate the `<div class="cards-grid cards-grid--2">` inside the "Featured Meditations" section. Replace `VIDEO_ID_1` and `VIDEO_ID_2` with the real IDs, or replace the placeholder blocks for "Featured Meditation Three" and "Featured Meditation Four" with real `<iframe>` embeds once Carol supplies the titles and IDs.
 
 ### Add the Mailchimp newsletter signup
-Get the embed HTML snippet from Carol's Mailchimp account. In `index.html` and `contact.html`, find the `<!-- TODO: Replace with Mailchimp embed snippet -->` comment and replace the placeholder `<div>` with the snippet. The `#mc_embed_signup` CSS overrides in `style.css` will automatically theme it to match the dark design.
+Get the embed HTML snippet from Carol's Mailchimp account. In `index.html` and `contact.html`, find the `<!-- TODO: Replace with Mailchimp embed snippet -->` comment and replace the placeholder `<div>` with the snippet. The `#mc_embed_signup` CSS overrides in `style.css` will automatically theme it to match the current design.
 
 ### Add the Formspree contact form ID
 Create a free account at [formspree.io](https://formspree.io), create a new form pointing to `nayachcarol@gmail.com`, and copy the form ID (e.g. `xpzgkwrb`). In `contact.html`, replace `FORMSPREE_ID` in the form action URL.

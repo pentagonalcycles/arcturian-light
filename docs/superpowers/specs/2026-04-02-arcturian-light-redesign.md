@@ -1,7 +1,7 @@
 # Arcturian Light London — Website Redesign Spec
 
 **Date:** 2026-04-02  
-**Last updated:** 2026-04-02 (post-build)  
+**Last updated:** 2026-11-09 — note the colour scheme was changed to a light theme after client approval (see `docs/superpowers/plans/2026-04-02-arcturian-light-rebuild.md` Post-Launch Changes)  
 **Client:** Carol Nayach  
 **Current site:** www.arcturianlight.co.uk (WordPress, single-page scroll)  
 **New site (live):** https://arcturian-light.vercel.app  
